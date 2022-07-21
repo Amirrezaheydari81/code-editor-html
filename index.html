@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <title>ویرایشگر کد HTML - ClaroTM.IR</title>
+    <style>
+        @font-face {
+            font-family: danapro;
+            src: url("https://waregint.sirv.com/iseokar.ir/fonts/Dana-Regular.woff2") format("woff2");
+            font-weight: 100;
+            font-style: normal
+        }
+
+        body {
+            font-family: danapro !important
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container mb-5 pb-5" id="container-1">
+        <h1 class="text-center mt-4">ویرایشگر کد HTML</h1>
+        <div class="row justify-content-center">
+            <div class="col-6" style="max-height:577px !important;">
+                <p class="form-label text-center text-orange">محل کد نویسی</p>
+                <textarea class="form-control" id="code-textarea" rows="22" v-model="code"></textarea>
+            </div>
+            <div class="col-6">
+                <p class="form-label text-center text-orange">خروجی کد نویسی</p>
+                <div class="form-control border-0" id="code-textarea" v-html="code"></div>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-around">
+            <div class="col-2">
+                <button class="btn btn-orange" type="button" onclick="location.reload();
+                ">پاک کردن</button>
+            </div>
+            <div class="col-10">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/vue-v2.js"></script>
+    <script src="js/01.js"></script>
+</body>
+
+</html>
